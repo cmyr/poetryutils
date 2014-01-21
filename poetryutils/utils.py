@@ -78,8 +78,7 @@ def count_syllables(sentance, debug=False):
 
 
     for w in words:
-        if w[0] == '#':
-            w = w[1:]
+        if is_camel(w):  
             sylls = count_syllables(de_camel(w))
         else:
             sylls = syllables.count(w)
@@ -125,6 +124,11 @@ def contains_url(text):
         return False
 
 
+def low_letter_ratio(text, cutoff=0.8):
+    t = re.sub(r'[^a-zA-Z .,!?"\']', '', text)
+    if (float(len(t)) / len(text)) < cutoff:
+        return True
+    return False
 
 
 def main():

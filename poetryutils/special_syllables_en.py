@@ -112,7 +112,10 @@ colin_words = [
 'baseball 2',
 'ruins 2',
 'killed 1',
-'crossed 1'
+'crossed 1',
+'buying 2',
+'realistic 4',
+'uncle 2'
 ]
 
 internet_syllables = [

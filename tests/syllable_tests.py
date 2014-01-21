@@ -256,6 +256,10 @@ love 1
 baseball 2
 grind 1
 ruins 2
+youtube 2
+buying 2
+realistic 4
+uncle 2
 """
 
 

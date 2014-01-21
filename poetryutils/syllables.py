@@ -34,6 +34,13 @@ for line in special_syllables:
         fallback_cache[_normalize_word(toks[0])] = int(toks[1])
 
 
+
+def syllables_in_number(number):
+    # yes I'm inelegant
+    # main special-case: the teens
+    pass
+
+
 def count(word):
     word = _normalize_word(word)
 
